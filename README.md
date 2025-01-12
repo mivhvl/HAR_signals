@@ -2,7 +2,7 @@
 The Inertial Sensor Signals Processing
 </h1>
 
-- this project is based on [*Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set*](http://archive.ics.uci.edu/ml/datasets/smartphone-based+recognition+of+human+activities+and+postural+transitions) :point_left: all descriptions are here
+- this project is based on [*Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set*](http://archive.ics.uci.edu/ml/datasets/smartphone-based+recognition+of+human+activities+and+postural+transitions)
 - includes the use of csv files, data processing algorithms, windowing, time and frequency signals, data visualisation
 - final data is ready to use in *Neural Network Models*
 - the project is focused on the classification of 6 activities: 3 dynamic like walking, walking upstairs, walking downstairs, and 3 static like standing, sitting, laying
@@ -32,6 +32,8 @@ Stages of this data processing project:
 - *magnitude()* - the euclidean magnitude for 3 axes signals
 
 **4. Windowing (fixed-width sliding windows)**
+
+<img src="https://github.com/mivhvl/HAR_signals/blob/main/images/windowing.png" width="400px">
 
 - Windowing the signal with a span of 2.56 sec (2.56sec × 50Hz = 128 cycles) and an overlap of 50%
 - **Each window has 128 elements**
@@ -63,8 +65,6 @@ Feature extraction from signals to prepare the data for the Neural Network - **s
 **7. Results**
 
 **General Data**
-
-<img src="https://github.com/mkowalsky97/Acc_Gyro_Signals_Processing/blob/main/images/g_data.png" width="400px">
 
 - :white_check_mark: after signal processing it's 481 features for each window
 - :white_check_mark: it's 10399 samples which are useful to train and test cnn 
